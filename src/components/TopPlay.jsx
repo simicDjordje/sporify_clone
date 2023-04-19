@@ -105,7 +105,8 @@ const TopPlay = () => {
 								style={{width: '20%', height: 'auto'}}
 								className="shadow-lg rounded-full"
 								>
-									<Link to={`/artists/${song?.artists[0].adamid}`}>
+							{/*fix id*/}
+									<Link to={`/artists/${song}`}>
 										<img src={song?.images?.background} alt="name" className="rounded-full object-cover w-20 h-20" />
 									</Link>
 								</SwiperSlide>
